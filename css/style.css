@@ -68,8 +68,6 @@ body{
     left: 0;
     bottom: 15px;
     color: #fff;
-    display: inline-block;
-    padding-right: 6px;
 }
 
 .pop-up.discount::before{
