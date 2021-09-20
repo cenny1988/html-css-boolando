@@ -32,21 +32,21 @@ body{
     position: relative;
 }
 
-/* effetto hover */
-.img-item img.image-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    /* object-fit: contain; */
-    opacity: 0;
-    /* transition: opacity .2s; */
-  }
-  .img-item:hover img.image-hover {
-    opacity: 1;
-  }
-/* fine effetto hover */
+    /* effetto hover */
+    .img-item img.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        /* object-fit: contain; */
+        opacity: 0;
+        /* transition: opacity .2s; */
+    }
+    .img-item:hover img.image-hover {
+        opacity: 1;
+    }
+    /* fine effetto hover */
 
 .heart{
     font-size: 18px;
@@ -68,19 +68,17 @@ body{
     left: 0;
     bottom: 15px;
     color: #fff;
+    display: inline-block;
+    padding-right: 6px;
 }
 
 .pop-up.discount::before{
     background-color: red;
-    display: inline-block;
-    padding: 2px 6px;
     content: "50%";
 }
 
 .pop-up.sustainability::after{
     background-color: green;
-    display: inline-block;
-    padding: 2px 6px;
     content: "Sostenibilità";
 }
 
