@@ -10,16 +10,8 @@ body{
 }
 
 /* main */
-.row-item{
-    /* position: relative;
-    top:0;
-    left: 0; */
-    /* background-color: yellow; */
-    /* height: 200px; */
-}
-
-
 /* card item */
+/* parte superiore img con sezione cuore e sconto */
 .item{
     float: left;
     width: calc(100% / 3);
@@ -29,12 +21,28 @@ body{
 
 .item img{
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .img-item{
     position: relative;
 }
+
+/* effetto hover */
+.img-item img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    /* transition: opacity .2s; */
+  }
+  .img-item:hover img.image-hover {
+    opacity: 1;
+  }
+/* fine effetto hover */
 
 .heart{
     font-size: 18px;
@@ -48,21 +56,19 @@ body{
     right: 0px;
 }
 
+
+/* div inferiore con posizione assoluta ed effetti ::before e ::after per tag sconto e sostenibilità */
 .pop-up{
     font-size: small;
     position: absolute;
     left: 0;
     bottom: 15px;
     color: #fff;
-    /* width: 100%; */
-    /* background-color: #000; */
 }
 
 .pop-up.discount::before{
     background-color: red;
     display: inline-block;
-    /* position: relative;
-    left: 0px; */
     padding: 2px 6px;
     content: "50%";
 }
@@ -70,12 +76,14 @@ body{
 .pop-up.sustainability::after{
     background-color: green;
     display: inline-block;
-    /* position: relative;
-    right: 0px; */
     padding: 2px 6px;
     content: "Sostenibilità";
 }
 
+
+
+
+/* Parte inferiore item con descrizione titolo e prezzo */
 /* Description-item */
 .description-item p{
     font-size: 10px;
