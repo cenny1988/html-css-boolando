@@ -9,6 +9,11 @@ body{
     font-size: 12px;
 }
 
+.clear-fix{
+    display: table;
+    clear: both;
+    content: '';
+}
 .container{
     width: 80%;
     margin: 0 auto;
