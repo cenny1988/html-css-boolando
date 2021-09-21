@@ -9,7 +9,7 @@ body{
     font-size: 12px;
 }
 
-.clear-fix{
+.clear-fix::after{
     display: table;
     clear: both;
     content: '';
