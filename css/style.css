@@ -45,6 +45,7 @@ body{
     }
     .img-item:hover img.image-hover {
         opacity: 1;
+        cursor: pointer;
     }
     /* fine effetto hover */
 
